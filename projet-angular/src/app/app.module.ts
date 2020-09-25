@@ -13,10 +13,15 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
+import { CommonModule } from '@angular/common';
+import { HelloComponent } from './hello.component';
+import { CodemirrorModule } from '@ctrl/ngx-codemirror';
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, NotFoundComponent],
+  declarations: [AppComponent, HomeComponent, NotFoundComponent, HelloComponent],
   imports: [
+    CommonModule,
+    CodemirrorModule,
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
